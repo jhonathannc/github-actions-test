@@ -12,4 +12,4 @@ jobs:
         with:
           who-to-greet: Jhonathan
       - name: Log Greeting Time
-        run: echo "${{ steps.greet }}" # github provide this steps variable
+        run: echo "${{ steps.greet.outputs.time }}"  # github provide  this steps variable
